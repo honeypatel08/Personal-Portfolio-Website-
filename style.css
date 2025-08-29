@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Vend+Sans:ital,wght@0,300..700;1,300..700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#background-video {
+  position: fixed;    
+  top: 0;
+  left: 0;
+  width: 100%;        
+  height: 100%;
+  object-fit: cover;   
+  z-index: -1;         
+}
+
+body{
+    background-color: rgb(255, 239, 219); 
+}
+
+.topBar{
+    font-family: "Libertinus Serif Display", system-ui;
+    font-weight: 400;
+    font-style: normal;
+
+    background-color: rgb(255, 239, 219); 
+
+  nav{
+    margin: 10px;
+    padding-top: 0.5cm;
+  }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+
+    .logo{
+        width: 3cm;   
+        height: auto;  
+    }
+    
+
+   .github {
+      color: black;
+       font-size: 1.5cm;
+      text-decoration: none;
+    }
+
+    .Resume{
+        color: black;
+        font-size:1.5cm;
+    }
+
+    .Linkedin{
+        color: rgb(10, 102, 194);
+        font-size: 1.5cm;
+    }
+
+    .contact{
+        color: black;
+        font-size: 1.5cm;
+    }
+    
+    .logo {
+        transition: transform 0.3s ease, color 0.3s ease;
+    }
+    .github,.Resume,.Linkedin,.contact{
+        display: inline-block;               
+        font-size: 1.5cm;
+        transition: transform 0.3s ease, color 0.3s ease; 
+        margin: 0 10px; 
+    }
+
+    .logo:hover,.github:hover,.Resume:hover,.Linkedin:hover,.contact:hover {
+        transform: scale(1.3);  
+    }
+
+}
+
+
+.space {
+    margin: 2%;
+}
+
+html {
+  scroll-behavior: smooth; 
+}
+.main1{
+    margin: 1cm;
+
+    display: flex;
+    flex-direction: column;   
+    align-items: center;      
+    gap: 3rem;               
+    padding: 2rem 0;
+
+    
+    .card1{       
+        display: flex;
+        align-items: center;   
+        justify-content: space-between;
+        border-radius: 10px;
+        padding: 20px;
+        position: relative;
+        margin-top: 5cm;
+
+        .rigth{
+            flex: 2;
+            margin-left: 8cm;
+            margin-right: 8cm;
+            padding: 20px;
+            border-radius:  50px;
+                background-color: bisque;
+
+
+            .subr2{
+                font-size:xx-large;
+            }
+        }
+
+        .left {
+            flex: 1;
+            display: flex;
+            justify-content: center;  
+
+            .circle {
+            width: 700px;       
+            height: 700px;
+            border-radius: 40%; 
+            overflow: hidden;  
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: beige;
+            }
+
+            .circle img {
+            width: 150%;
+            height: 100%;
+            object-fit: cover;  
+            }
+        
+        }
+    }
+
+
+}
+
+
+.main2{
+    margin: 1cm;
+
+    margin-top: 7cm;
+
+    display: flex;
+    flex-direction: column;   
+    align-items: center;     
+    gap: 3rem;             
+    padding: 2rem 0;
+
+     .card2{
+        display: flex;
+        align-items: center;   
+        justify-content: space-between;
+        border-radius: 10px;
+        padding: 20px;
+        position: relative;
+
+        margin-top: 5cm;
+
+        .left1 {
+            flex: 1;
+            display: flex;
+            justify-content: center;  
+
+            .circle {
+            width: 1500px;       
+            height: 1000px;
+            border-radius: 40%; 
+            overflow: hidden;  
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            }
+
+            .circle img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;  
+            }        
+        }
+
+        .rigth1{
+            flex: 2;
+            margin-left: 10cm;
+            margin-right: 1cm;
+            padding: 20px;
+            border-radius:  50px;
+                background-color: bisque;
+
+
+            .subr2{
+                font-size:xx-large;
+            }
+
+        }
+
+   }
+}
+
+.main3{
+    margin: 1cm;
+    margin-top: 7cm;
+    display: flex;
+    flex-direction: row;   
+    align-items: center;   
+    justify-content: space-between; 
+    gap: 3rem;             
+    padding: 2rem 0;
+
+
+    .right3{
+            flex: 2;
+            margin-left: 5cm;
+            margin-right: 10cm;
+            padding: 20px;
+            border-radius:  50px;
+            background-color: bisque;
+
+
+
+            .subr3{
+                font-size:xx-large;
+            }
+        }
+
+        .left3 {
+            flex: 1;
+            display: flex;
+            justify-content: center;  
+
+            margin-right: 5cm;
+
+            .circle3 {
+                width: 900px;       
+                height: 900px;
+                overflow: hidden;  
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .circle3 img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;  
+            }
+        }
+}
+
+.space2{
+    margin-top: 3cm;
+}
+
+.endPage {
+  padding: 50px 20px;
+  text-align: center;
+  margin-top: 5cm;
+   margin-left: 30cm;
+  margin-bottom: 5cm;
+
+  width: 20cm;
+  height: 15cm;
+  background-color: rgb(255, 239, 219); 
+
+  
+}
+.endPage id {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.endPage form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.endPage input,.endPage textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+
+.endPage button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.endPage button:hover {
+  background-color: #0056b3;
+}
+
+
+
+
+
